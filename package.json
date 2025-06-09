@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build --base=/Flowers/ --emptyOutDir",
+    "build": "vite build --base=/photosite-first-project/ --emptyOutDir",
     "preview": "vite preview",
-    "deploy": "git add . && git commit -m 'auto commit' && git push origin main",
+    "deploy": "gh-pages -d dist",
     "convert-webp": "node convert-webp.js"
   },
   "devDependencies": {
@@ -15,6 +15,7 @@
     "imagemin": "^9.0.0",
     "imagemin-cli": "^3.0.0",
     "imagemin-webp": "^8.0.0",
+    "gh-pages": "^6.1.1",
     "vite": "^6.2.2"
   },
   "dependencies": {
