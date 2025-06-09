@@ -1,0 +1,95 @@
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+
+  &__border {
+    border: 1px solid var(--color-light);
+    opacity: 0.3;
+  }
+
+  &__container {
+    max-width: 848px;
+    margin: auto;
+    padding: 40px 8px;
+    text-align: center;
+  }
+
+  &__links {
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-light);
+    padding: 0 12px;
+    cursor: pointer;
+  }
+
+  &__link:hover {
+    color: var(--color-accent);
+  }
+
+  &__link_logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__bull {
+    max-width: 43px;
+  }
+
+  &__link_text {
+    display: block;
+    font-family: 'Alumni Sans Pinstripe', serif;
+    font-size: 12px;
+    line-height: 200%;
+    font-weight: 900;
+    text-transform: none;
+    text-decoration: none;
+    color: var(--color-light);
+  }
+
+  &__link_text:hover {
+    color: var(--color-accent);
+  }
+
+  &__column_bottom {
+    max-width: 848px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 4px 8px;
+    margin: auto;
+  }
+
+  &__info {
+    font-family: 'Alumni Sans Pinstripe', serif;
+    font-size: 10px;
+    line-height: 240%;
+    font-weight: 900;
+    text-transform: none;
+  }
+
+  &__info_order {
+    order: 1;
+  }
+
+  @media (max-width: 768px) {
+    &__container {
+      max-width: 344px;
+      padding: 30px 8px 35px 8px;
+    }
+
+    &__column_bottom {
+      display: block;
+      max-width: 344px;
+      text-align: center;
+      padding: 4px 16px;
+    }
+
+    &__contact {
+      padding: 0 4px;
+    }
+  }
+}

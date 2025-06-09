@@ -1,0 +1,111 @@
+.eggs {
+  background-image: linear-gradient(
+    var(--color-light) 32%,
+    var(--color-dark) 32%,
+    var(--color-dark) 100%
+  );
+
+  &__container {
+    max-width: 880px;
+    margin: auto;
+    padding: 80px 8px;
+  }
+
+  &__title {
+    font-size: 62px;
+    line-height: 113%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__title_accent {
+    color: var(--color-accent);
+    margin-bottom: 40px;
+  }
+
+  &__title_light {
+    color: var(--color-light);
+    margin-bottom: 40px;
+  }
+
+  &__description {
+    font-family: 'Alumni Sans Pinstripe', serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 38px;
+  }
+
+  &__screenshot {
+    max-width: 263px;
+    margin: 0 auto 80px;
+  }
+
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  &__images img {
+    flex: 1 1 calc(25% - 16px);
+    max-width: calc(25% - 16px);
+  }
+
+  &__btn {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  &__button {
+    padding: 12px 24px 12px 24px;
+  }
+
+  &__btn-text {
+    padding-right: 8px;
+  }
+  &__arrow {
+    fill: var(--color-light);
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+
+    &__container {
+      max-width: 360px;
+      padding: 60px 0 60px 0;
+    }
+
+    &__title {
+      font-size: 42px;
+      line-height: 119%;
+      letter-spacing: -0.01em;
+      margin-bottom: 25px;
+    }
+
+    &__title_accent {
+      display: block;
+      margin: 0;
+    }
+
+    &__title_light {
+      margin-bottom: 25px;
+    }
+
+    &__screenshot {
+      margin: 0 auto 30px;
+    }
+
+    &__images img {
+      flex: 1 1 calc(50% - 16px);
+      max-width: calc(50% - 16px);
+    }
+
+    &__image_hidden-small {
+      display: none;
+    }
+  }
+}

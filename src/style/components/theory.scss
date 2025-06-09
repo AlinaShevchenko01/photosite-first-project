@@ -1,0 +1,66 @@
+.theory {
+  &__container {
+    max-width: 848px;
+    text-align: center;
+    padding: 60px 0 60px 0;
+    margin: auto;
+  }
+
+  &__title {
+    font-size: 62px;
+    line-height: 81%;
+    margin-bottom: 30px;
+  }
+
+  &__title_accent {
+    color: var(--color-accent);
+  }
+
+  &__description {
+    font-family: 'Alumni Sans Pinstripe', serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 133%;
+    text-align: center;
+    text-transform: none;
+    padding: 0 40px 0 40px;
+  }
+
+  &__image {
+    box-sizing: border-box;
+    max-width: 100%;
+    border: 3px solid var(--color-dark);
+    border-radius: 20px;
+    margin: 50px 0 24px 0;
+  }
+
+  &__screenshot {
+    padding: 0 12px 0 12px;
+  }
+
+  @media (max-width: 768px) {
+    &__container {
+      max-width: 344px;
+      padding: 50px 0 50px 0;
+    }
+
+    &__title {
+      font-size: 42px;
+      line-height: 119%;
+      letter-spacing: -0.01em;
+      margin-bottom: 25px;
+    }
+
+    &__description {
+      padding: 0;
+    }
+
+    &__image {
+      margin: 30px 0 20px 0;
+    }
+
+    &__screenshot {
+      padding: 0;
+    }
+  }
+}

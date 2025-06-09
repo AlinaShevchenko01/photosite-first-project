@@ -1,0 +1,72 @@
+.telegram {
+  background-color: var(--color-dark);
+
+  &__wrap {
+    padding: 80px 8px 80px 8px;
+    text-align: center;
+  }
+
+  &__container {
+    max-width: 848px;
+    padding: 60px 8px 70px 8px;
+    border: 3px solid var(--color-light);
+    text-align: center;
+    margin: auto;
+  }
+
+  &__title {
+    font-size: 62px;
+    line-height: 113%;
+    color: var(--color-light);
+  }
+
+  &__title_accent {
+    color: var(--color-accent);
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-family: 'Alumni Sans Pinstripe', serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 133%;
+    text-transform: none;
+    color: var(--color-light);
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    padding: 8px 40px;
+  }
+
+  &__icon {
+    margin-right: 12px;
+    fill: var(--color-light);
+  }
+
+  @media (max-width: 768px) {
+    &__wrap {
+      padding: 50px 8px;
+    }
+
+    &__container {
+      max-width: 344px;
+      padding: 35px 4px 50px 4px;
+      border: 2px solid var(--color-light);
+    }
+
+    &__title {
+      font-size: 42px;
+      line-height: 119%;
+      letter-spacing: -0.01em;
+    }
+
+    &__title__accent {
+      margin-bottom: 25px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+  }
+}

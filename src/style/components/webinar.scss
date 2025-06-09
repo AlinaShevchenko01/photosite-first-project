@@ -1,0 +1,124 @@
+.webinar {
+  background-color: var(--color-dark);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 864px;
+    padding: 80px 8px;
+    gap: 20px;
+  }
+
+  &__column {
+    min-width: 0;
+  }
+
+  &__column_text {
+    max-width: 212px;
+  }
+
+  &__title {
+    font-size: 56px;
+    line-height: 113%;
+    color: var(--color-light);
+    margin-bottom: 36px;
+  }
+
+  &__title_accent {
+    color: var(--color-accent);
+    margin: 0;
+  }
+
+  &__text {
+    font-family: 'Alumni Sans Pinstripe', serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 133%;
+    color: var(--color-light);
+    text-transform: none;
+  }
+
+  &__btn {
+    margin: 100px 12px 0 0;
+  }
+
+  &__buttons_small {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    &__container {
+      max-width: 360px;
+      display: block;
+      padding: 52px 8px;
+    }
+
+    &__column {
+      margin: 0 auto;
+    }
+
+    &__column_text {
+      max-width: 100%;
+    }
+
+    &__buttons_orig {
+      display: none;
+    }
+
+    &__buttons_small {
+      display: block;
+    }
+
+    &__title {
+      font-size: 42px;
+      line-height: 100%;
+      letter-spacing: -0.01em;
+      margin-bottom: 25px;
+      padding-right: 30px;
+    }
+
+    &__text {
+      margin-bottom: 35px;
+      padding-right: 100px;
+    }
+
+    &__btn {
+      margin: 40px 12px 0 0;
+    }
+  }
+}
+.swiper-webinar {
+  &__image img {
+    width: 304px;
+    max-width: 100%;
+  }
+
+  &__name {
+    font-size: 32px;
+    line-height: 125%;
+    color: var(--color-light);
+    margin: 25px 0 18px 0;
+    padding: 0 8px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 121%;
+    max-width: 304px;
+    padding: 0 8px;
+  }
+
+  @media (max-width: 768px) {
+    &__name {
+      font-size: 28px;
+      line-height: 143%;
+      margin: 0 0 16px 0;
+      padding: 0;
+    }
+
+    &__text {
+      padding: 0;
+    }
+  }
+}

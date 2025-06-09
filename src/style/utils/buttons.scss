@@ -1,0 +1,52 @@
+.btn-dark {
+  font-family: 'Yanone Kaffeesatz', serif;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-light);
+}
+
+.btn-dark:hover {
+  border: 1px solid var(--color-accent);
+  background-color: var(--color-accent);
+}
+
+.btn-accent {
+  font-family: 'Yanone Kaffeesatz', serif;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  color: var(--color-light);
+  background-color: var(--color-accent);
+}
+
+.btn-accent:hover {
+  background-color: var(--color-dark);
+}
+
+.btn-arrow {
+  background: var(--color-dark);
+  fill: var(--color-light);
+  border: 1px solid var(--color-light);
+  padding: 7px 15px;
+}
+
+.btn-arrow:hover {
+  fill: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.arrow-transform {
+  transform: rotate(180deg);
+}
+
+.cross_union {
+  fill: var(--color-light);
+}
+
+.cross_union:hover {
+  fill: var(--color-accent);
+}

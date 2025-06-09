@@ -1,0 +1,141 @@
+.header {
+  background-color: var(--color-dark);
+  width: 100%;
+
+  &__container {
+    box-sizing: border-box;
+  }
+
+  &__links {
+    max-width: 848px;
+    margin: auto;
+    text-align: center;
+    padding: 35px 0 21px 0;
+  }
+
+  &__link:hover {
+    color: var(--color-accent);
+  }
+
+  &__bull {
+    display: block;
+    max-width: 42px;
+    margin: 0 auto 21px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-light);
+    padding: 0 20px 0 20px;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    &__links {
+      display: none;
+    }
+  }
+
+  .burger {
+    @media (max-width: 768px) {
+      display: block;
+      max-width: 360px;
+      margin: auto;
+
+      &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        max-width: 342px;
+        padding: 24px 8px 0;
+        font-size: 18px;
+      }
+
+      &__link {
+        text-decoration: none;
+        color: var(--color-light);
+      }
+
+      &__link:hover {
+        color: var(--color-accent);
+      }
+
+      &__navigation {
+        display: block;
+        padding: 20px 4px 32px;
+      }
+
+      &__navigation-link {
+        display: block;
+        text-decoration: none;
+        color: var(--color-light);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 244%;
+        padding: 0 4px;
+        cursor: pointer;
+      }
+
+      &__navigation-link:last-child {
+        padding-bottom: 0;
+        margin-bottom: 44px;
+      }
+
+      &__navigation-link:hover {
+        color: var(--color-accent);
+      }
+
+      &__link_cross {
+        min-width: 32px;
+      }
+
+      &__help {
+        margin: auto;
+        max-width: 344px;
+        padding: 0 4px 71px;
+      }
+
+      &__help-text {
+        color: var(--color-light);
+        margin-bottom: 16px;
+        padding-left: 4px;
+      }
+
+      &__help-btn {
+        display: block;
+        margin: 0 auto 16px;
+        padding: 16px 82px;
+      }
+
+      &__help-btn_icon {
+        fill: var(--color-light);
+      }
+
+      &__help-btn:last-child {
+        padding: 16px 88px;
+        margin-bottom: 0;
+      }
+
+      &__help-btn_link {
+        text-decoration: none;
+        color: var(--color-light);
+      }
+
+      &__icon_tg {
+        padding-right: 16px;
+      }
+
+      &__icon_wta {
+        padding-right: 12px;
+      }
+
+      &__icon_call {
+        padding-right: 10px;
+      }
+    }
+  }
+}

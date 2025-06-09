@@ -1,0 +1,115 @@
+.inst {
+  background-color: var(--color-dark);
+  padding: 0 10px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 848px;
+    position: relative;
+    top: 50px;
+    border: 2px solid var(--color-dark);
+    outline: 1px solid var(--color-dark);
+    outline-offset: -8px;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    gap: 20px;
+    padding: 0 8px 0 8px;
+  }
+
+  &__inner-border {
+    position: relative;
+  }
+
+  &__text {
+    font-family: 'Alumni Sans Pinstripe', serif;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 131%;
+    text-transform: none;
+    padding: 50px 0 54px 0;
+  }
+
+  &__text_right {
+    padding: 50px 20px 52px 0;
+  }
+
+  &__column {
+    line-height: 131%;
+    width: 33.7%;
+  }
+
+  &__column-bull {
+    width: 16%;
+  }
+
+  &__ava {
+    padding: 50px 0 0 20px;
+  }
+
+  &__name {
+    margin: auto;
+    padding: 20px 0 0 20px;
+  }
+
+  &__logo {
+    max-width: 110px;
+  }
+
+  &__sign {
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    padding-left: 8px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 8px;
+    &__container {
+      display: block;
+      box-sizing: border-box;
+      max-width: 344px;
+      margin: auto;
+      position: relative;
+      top: 28px;
+    }
+
+    &__column {
+      margin: auto;
+      width: 100%;
+    }
+
+    &__text {
+      padding: 0 8px 0 8px;
+    }
+
+    &__text_right {
+      padding: 0 8px 38px 8px;
+    }
+
+    &__ava {
+      margin: auto;
+      padding: 38px 0 20px 0;
+    }
+
+    &__bull {
+      display: block;
+      margin: auto;
+    }
+
+    &__name {
+      padding: 0 0 20px 0;
+      text-align: center;
+    }
+  }
+}
+
+.bg-repeat {
+  height: 8px;
+  width: 100%;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--color-light) 0 16px,
+    var(--color-dark) 16px 24px
+  );
+}

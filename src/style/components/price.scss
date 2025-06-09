@@ -1,0 +1,237 @@
+.price {
+  &__container {
+    max-width: 848px;
+    padding: 80px 8px 52px 8px;
+    text-align: center;
+    margin: auto;
+  }
+
+  &__title {
+    font-size: 62px;
+    line-height: 113%;
+    margin-bottom: 46px;
+  }
+
+  &__title_accent {
+    color: var(--color-accent);
+    margin-bottom: 0;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+  }
+
+  &__column {
+    border: 2px solid var(--color-dark);
+  }
+
+  &__plan {
+    border-bottom: 2px solid var(--color-dark);
+  }
+
+  &__citizenship {
+    font-size: 32px;
+    margin: 30px 0 10px 0;
+  }
+
+  &__description {
+    font-family: 'Alumni Sans Pinstripe', serif;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 121%;
+    text-transform: none;
+    padding-bottom: 28px;
+  }
+
+  &__description_right {
+    padding-bottom: 16px;
+  }
+
+  &__buy {
+    padding: 22px 0 40px 0;
+  }
+
+  &__cost {
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    margin-bottom: 42px;
+  }
+
+  &__cost_right {
+    margin-bottom: 10px;
+  }
+
+  &__button {
+    padding: 12px 24px;
+    margin-bottom: 16px;
+  }
+
+  &__details {
+    color: var(--color-dark);
+    text-decoration: underline dashed 1px var(--color-dark);
+  }
+
+  &__details:hover {
+    color: var(--color-accent);
+  }
+
+  &__intensive {
+    border: 1px solid var(--color-light);
+    outline: 1px solid var(--color-light);
+    outline-offset: -6px;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    padding: 20px 8px 24px 8px;
+    margin: 16px 0 28px 0;
+  }
+
+  &__intensive-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  &__intensive-column {
+    display: grid;
+    gap: 8px;
+  }
+
+  &__intensive-column_left {
+    grid-template-columns: 20% 80%;
+  }
+
+  &__intensive-column_right {
+    grid-template-columns: 50% 50%;
+  }
+
+  &__intensive-title {
+    font-size: 22px;
+    color: var(--color-light);
+    margin-bottom: 8px;
+  }
+
+  &__intensive-title_left {
+    text-align: left;
+  }
+  &__intensive-title_right {
+    text-align: right;
+  }
+
+  &__intensive-text {
+    font-family: 'Alumni Sans Pinstripe', serif;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 121%;
+    text-transform: none;
+    color: var(--color-light);
+  }
+
+  &__intensive-text_left {
+    text-align: left;
+  }
+
+  &__intensive-text_right {
+    text-align: right;
+  }
+
+  &__intensive-button {
+    padding: 8px 20px;
+  }
+
+  &__separator {
+    fill: var(--color-dark);
+    margin-bottom: 20px;
+  }
+
+  &__intensive-checkbox_real {
+    display: none;
+  }
+
+  &__intensive-checkbox_custom {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-color: var(--color-light);
+    margin: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  &__intensive-checkbox-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 17px;
+    height: 13px;
+    opacity: 0;
+    stroke: var(--color-light);
+    fill: var(--color-light);
+    transition: opacity 0.3s;
+  }
+
+  &__intensive-checkbox_real:checked + &__intensive-checkbox_custom {
+    background-color: var(--color-accent);
+
+    .price__intensive-checkbox-icon {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__container {
+      max-width: 344px;
+      padding: 50px 8px 60px 8px;
+    }
+
+    &__row {
+      gap: 8px;
+    }
+
+    &__citizenship {
+      font-size: 16px;
+    }
+
+    &__cost {
+      font-size: 16px;
+    }
+
+    &__intensive-box {
+      display: block;
+    }
+
+    &__intensive-column_right {
+      border-top: 1px solid var(--color-light);
+      padding: 16px 0 0 28px;
+    }
+
+    &__intensive-text_right {
+      text-align: left;
+    }
+
+    &__intensive-text_left {
+      padding-bottom: 8px;
+    }
+
+    &__intensive-title_right {
+      text-align: left;
+    }
+
+    &__intensive-btn {
+      text-align: right;
+      padding-right: 16px;
+    }
+
+    &__separator {
+      display: none;
+    }
+
+    &__description_sale {
+      display: none;
+    }
+  }
+}

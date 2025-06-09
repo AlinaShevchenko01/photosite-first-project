@@ -1,0 +1,107 @@
+.study {
+  padding: 80px 10px 0 10px;
+
+  &__container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 848px;
+    border: 2px solid var(--color-dark);
+    gap: 16px;
+    padding: 60px 8px;
+  }
+
+  &__column {
+    box-sizing: border-box;
+    max-width: 48%;
+    padding-left: 42px;
+  }
+
+  &__column_small {
+    max-width: 37%;
+    padding: 0 36px 0 0;
+  }
+
+  &__title {
+    font-size: 62px;
+    line-height: 113%;
+  }
+
+  &__title_accent {
+    color: var(--color-accent);
+    padding-bottom: 0;
+  }
+
+  &__description {
+    font-family: 'Alumni Sans Pinstripe', serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 133%;
+    text-transform: none;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    padding: 12px 56px 12px 56px;
+  }
+  &__btn_repeat {
+    display: none;
+  }
+
+  &__screenshot {
+    text-align: left;
+  }
+
+  &__screenshot-photo {
+    max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    &__container {
+      display: block;
+      text-align: center;
+      max-width: 342px;
+      padding: 30px 8px 35px 8px;
+    }
+
+    &__column {
+      max-width: 100%;
+      padding: 0;
+    }
+
+    &__title {
+      display: inline-block;
+      font-size: 42px;
+      line-height: 119%;
+      letter-spacing: -0.01em;
+      margin-bottom: 25px;
+    }
+    &__title_accent {
+      display: inline-block;
+    }
+    &__description {
+      padding: 0 12px;
+      margin-bottom: 30px;
+    }
+
+    &__btn_orig {
+      display: none;
+    }
+
+    &__btn_repeat {
+      display: block;
+      margin: auto;
+    }
+
+    &__screenshot {
+      padding: 0 12px;
+      margin-bottom: 30px;
+    }
+
+    &__screenshot-photo {
+      padding: 0;
+      max-width: 100%;
+    }
+  }
+}

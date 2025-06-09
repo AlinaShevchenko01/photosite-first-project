@@ -1,0 +1,117 @@
+.black-frame {
+  box-sizing: border-box;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 74px;
+    padding: 21px 54px 25px 54px;
+  }
+
+  &__border {
+    display: none;
+  }
+
+  &__column_left {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 12px;
+  }
+
+  &__title {
+    font-size: 18px;
+    color: var(--color-light);
+    margin-bottom: 8px;
+  }
+
+  &__title_left {
+    text-align: left;
+  }
+  &__title_right {
+    text-align: right;
+  }
+
+  &__text {
+    font-family: 'Alumni Sans Pinstripe', serif;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 121%;
+    text-transform: none;
+    color: var(--color-light);
+  }
+
+  &__text_left {
+    text-align: left;
+  }
+
+  &__text_right {
+    text-align: right;
+  }
+
+  &__checkbox_real {
+    display: none;
+  }
+
+  &__checkbox_custom {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-color: var(--color-light);
+    margin: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  &__checkbox-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 17px;
+    height: 13px;
+    opacity: 0;
+    stroke: var(--color-light);
+    fill: var(--color-light);
+    transition: opacity 0.3s;
+  }
+
+  &__checkbox_real:checked + &__checkbox_custom {
+    background-color: var(--color-accent);
+
+    .black-frame__checkbox-icon {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__box {
+      display: block;
+      max-width: 344px;
+      padding: 0;
+    }
+
+    &__column_left {
+      padding: 20px 12px 22px 12px;
+      gap: 0;
+    }
+
+    &__border {
+      display: block;
+      border-bottom: 1px solid var(--color-light);
+      opacity: 0.3;
+    }
+
+    &__text_right {
+      text-align: left;
+      padding: 0 0 18px 80px;
+    }
+
+    &__title_right {
+      text-align: left;
+      padding: 16px 0 0 80px;
+    }
+  }
+}

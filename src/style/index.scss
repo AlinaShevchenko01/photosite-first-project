@@ -1,0 +1,44 @@
+@import 'utils/fonts';
+@import 'utils/variables';
+@import 'utils/black-frame';
+@import 'utils/buttons';
+
+@import 'components/citizen';
+@import 'components/communication';
+@import 'components/eggs';
+@import 'components/footer';
+@import 'components/for-who';
+@import 'components/header';
+@import 'components/hero';
+@import 'components/inst';
+@import 'components/modal';
+@import 'components/modal-intensive';
+@import 'components/price';
+@import 'components/review';
+@import 'components/study';
+@import 'components/telegram';
+@import 'components/theory';
+@import 'components/webinar';
+
+@import 'reset';
+
+body {
+  font-family: 'Yanone Kaffeesatz', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  box-sizing: border-box;
+}
+
+.no-js {
+  scroll-behavior: smooth;
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
